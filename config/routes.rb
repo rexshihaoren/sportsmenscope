@@ -1,4 +1,4 @@
-Sportsmenscope2::Application.routes.draw do
+Sportsmenscope::Application.routes.draw do
 
   get "topcharts" => "pages#topcharts"
   get "rateanathlete" => "pages#rateanathlete"

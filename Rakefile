@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Sportsmenscope2::Application.load_tasks
+Sportsmenscope::Application.load_tasks
