@@ -1,0 +1,30 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+
+$font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-default-bg: #2ecc71;
+$navbar-default-link-color: white;
+$jumbotron-bg: #2ecc71;
+$jumbotron-color: white;
+$text-color: black;
+
+.borderme {
+	border-style: solid;
+	border-width: small;
+	margin: 0px 250px 0px 250px;
+	padding: 0px 0px 250px 0px;
+}
+
+.col-lg-6 {
+	margin: 40px 0px 50px 220px;
+}
+
+.usercomment {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #2ecc71;
+}
+
+
+
+@import 'bootstrap';
