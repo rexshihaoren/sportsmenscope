@@ -26,4 +26,11 @@ class User < ActiveRecord::Base
     clean_up_passwords                                                          
     result                                                                      
   end 
+	def email_required?
+	  super && provider.blank?
+	end
+
+	def password_required?
+	  super && provider.blank?
+	end
 end

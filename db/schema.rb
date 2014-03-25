@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140324235030) do
+ActiveRecord::Schema.define(version: 20140325003711) do
 
   create_table "authorizations", force: true do |t|
     t.string   "provider"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20140324235030) do
   add_index "sessions", ["updated_at"], name: "index_sessions_on_updated_at"
 
   create_table "users", force: true do |t|
-    t.string   "email",                  default: "", null: false
+    t.string   "email",                  default: ""
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
@@ -49,7 +49,6 @@ ActiveRecord::Schema.define(version: 20140324235030) do
     t.string   "name"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
