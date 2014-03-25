@@ -3,10 +3,14 @@ Sportsmenscope::Application.routes.draw do
   get "topcharts" => "pages#topcharts"
   get "rateanathlete" => "pages#rateanathlete"
   get "myaccount" => "pages#myaccount"
-  root "pages#home"
+  root "pages#welcome"
   get "about" => "pages#about"
   get "topcharts" => "pages#topcharts"
   get "sampleathlete" => "pages#sampleathlete"
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  # devise_scope :user do
+  #   get 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
+  # end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
